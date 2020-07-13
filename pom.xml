@@ -41,6 +41,6 @@
 
     <scm>
         <developerConnection>scm:git:jlee1976apple@github.com:jlee1976apple/sfg-pet-clinic.git</developerConnection>
-        <tag>sfg-pet-clinic-0.0.1</tag>
+        <tag>HEAD</tag>
   </scm>
 </project>
