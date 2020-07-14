@@ -1,40 +1,35 @@
 package guru.springframework.sfgpetclinic.services.map;
 
-import guru.springframework.sfgpetclinic.model.Owner;
-import guru.springframework.sfgpetclinic.services.OwnerService;
+import guru.springframework.sfgpetclinic.model.Pet;
+import guru.springframework.sfgpetclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
-    public Owner findById(Long Id) {
+    public Pet findById(Long Id) {
         return super.findById(Id);
     }
 
     @Override
-    public Owner save(Owner object) {
+    public Pet save(Pet object) {
         return super.save(object.getId(), object);
     }
 
     @Override
-    public Set<Owner> findAll() {
+    public Set<Pet> findAll() {
         return super.findAll();
     }
 
     @Override
-    public void delete(Owner object) {
+    public void delete(Pet object) {
         super.delete(object);
     }
 
     @Override
     public void deleteById(Long Id) {
         super.deleteById(Id);
-    }
-
-    @Override
-    public Owner findByLastName(String lastName) {
-        return null;
     }
 }
