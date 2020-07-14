@@ -13,7 +13,7 @@ public class PersonServiceMap extends AbstractMapService<Person, Long> implement
 
     @Override
     public Person save(Person object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override
