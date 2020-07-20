@@ -26,7 +26,7 @@ public class PetTypeSDJpaService implements PetTypeService {
 
     @Override
     public PetType save(PetType object) {
-        return null;
+        return petTypeRepository.save(object);
     }
 
     @Override
